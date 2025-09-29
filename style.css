@@ -1,0 +1,196 @@
+:root {
+  --background: #011638;
+  --header-bg: #2e294e;
+  --medium: #9055a2;
+  --heading-text: #d499b9;
+  --main-text: #e8c1c5;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--main-text);
+
+  font-size: 18px;
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 0px 20px;
+  width: 100svw;
+  max-width: 100svw;
+  background-color: var(--header-bg);
+}
+
+nav #img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px;
+}
+
+nav img {
+  height: 40px;
+  padding: 3px;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+nav .text-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--heading-text);
+}
+
+nav .text-link:hover,
+#img-container:hover {
+  background-color: var(--medium);
+  color: var(--background);
+}
+
+nav img:hover {
+  content: url(images/other/PlanetIcon_navy.png);
+}
+
+header {
+  width: 100svw;
+  height: 100svh;
+  background-image: url(images/other/earth-nasa-large-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--header-bg);
+
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  align-items: flex-start;
+}
+
+header article {
+  padding: 50px;
+}
+
+header h1 {
+  color: var(--heading-text);
+  font-size: 50px;
+}
+
+#intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+
+  width: 100svw;
+  height: fit-content;
+}
+
+#intro-section img {
+  max-width: 300px;
+}
+
+#intro-section article {
+  align-self: flex-start;
+  width: 80svw;
+  max-width: 1000px;
+  padding: 50px;
+}
+
+#intro-section div {
+  border-bottom: 2px solid var(--medium);
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+#intro-section p {
+  color: var(--main-text);
+}
+
+.strip-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  padding: 50px 20px;
+  background-color: var(--background);
+  color: var(--main-text);
+}
+
+.strip-section img {
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.strip-section article {
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.strip-section article h2 {
+  border-bottom: 1px solid var(--medium);
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: var(--heading-text);
+}
+
+.strip-section article p {
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  width: 100svw;
+  height: fit-content;
+
+  color: var(--main-text);
+  background-color: var(--medium);
+}
+
+footer p {
+  padding: 20px;
+}
