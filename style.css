@@ -140,7 +140,7 @@ header h1 {
 
 .comp-section h3 {
   font-size: 36px;
-  color: var(--);
+  color: var(--heading-text);
 }
 
 .comp-section p {
@@ -200,7 +200,6 @@ header h1 {
 .planet-section #mercury-bg {
   background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
 }
-
 .planet-section #venus-bg {
   background-image: url(images/venus/venus_landscape_1920x1080px.png);
 }
@@ -229,8 +228,8 @@ header h1 {
   padding: 5px 20px;
   border-radius: 5px;
   backdrop-filter: blur(1px);
-  background-color: #000000a8;
-  color: var(--);
+  background-color: var(--header-bg);
+  color: var(--heading-text);
 }
 
 .planet-section .planet-grid {
@@ -252,7 +251,8 @@ header h1 {
 }
 
 .planet-section .planet-grid .grid-item h3 {
-  color: var(--aurora-teal);
+  color: var(--heading-text);
+  border-bottom: 2px solid var(--heading-text);
 }
 
 .planet-section .planet-grid .grid-item ul {
