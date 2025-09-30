@@ -13,16 +13,14 @@ html {
 * {
   padding: 0;
   margin: 0;
-
   box-sizing: border-box;
-
   line-height: 1.5;
 }
 
 body {
+  width: 100svw;
   background-color: var(--background);
   color: var(--main-text);
-
   font-size: 18px;
   font-family: monospace;
 }
@@ -74,119 +72,234 @@ nav .text-link {
 nav .text-link:hover,
 #img-container:hover {
   background-color: var(--medium);
-  color: var(--background);
+  color: var(--header-bg);
 }
 
 nav img:hover {
   content: url(images/other/PlanetIcon_navy.png);
 }
 
-header {
+header #title-section {
   width: 100svw;
   height: 100svh;
+  max-height: 1000px;
+
   background-image: url(images/other/earth-nasa-large-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: var(--header-bg);
-
-  width: 100svw;
-  height: 100svh;
-  display: flex;
-  align-items: flex-start;
-}
-
-header article {
-  padding: 50px;
+  background-color: red;
 }
 
 header h1 {
-  color: var(--heading-text);
+  padding: 50px;
   font-size: 50px;
+  color: var(--heading-text);
 }
 
 #intro-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+  padding: 100px 0;
 
   width: 100svw;
-  height: fit-content;
+
+  background-color: var(--header-bg);
 }
 
 #intro-section img {
-  max-width: 300px;
-}
-
-#intro-section article {
-  align-self: flex-start;
-  width: 80svw;
-  max-width: 1000px;
-  padding: 50px;
-}
-
-#intro-section div {
-  border-bottom: 2px solid var(--medium);
-  padding: 5px 0;
-  margin: 5px 0;
+  width: 1390px;
+  border-radius: 5px;
 }
 
 #intro-section p {
+  width: 60svw;
   color: var(--main-text);
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.strip-section {
+#comp-container {
+  padding: 100px 0;
+  background-color: var(--cosmic-grey);
+}
+
+.comp-section {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
-
-  padding: 50px 20px;
-  background-color: var(--background);
-  color: var(--main-text);
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 60px;
+  padding: 30px 0;
 }
 
-.strip-section img {
-  border-radius: 12px;
-
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+.comp-section h3 {
+  font-size: 36px;
+  color: var(--);
 }
 
-.strip-section article {
+.comp-section p {
+  font-size: 24px;
+  color: var(--meteor-gray);
+}
+
+.comp-section #text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+
+  height: 500px;
+  width: 500px;
+  background-color: var(--cosmic-black);
   padding: 20px;
-  border-radius: 12px;
-  max-width: 600px;
+  border-radius: 5px;
 }
 
-.strip-section article h2 {
-  border-bottom: 1px solid var(--medium);
-  font-size: 32px;
-  margin-bottom: 12px;
-  color: var(--heading-text);
+.comp-section #collage-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.strip-section article p {
-  font-size: 18px;
+.comp-section #collage-section img {
+  border-radius: 0;
+  width: 250px;
+}
+
+.planet-section {
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.planet-section .bg-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: red;
+
+  width: 100svw;
+  height: 500px;
+}
+
+.planet-section #mercury-bg {
+  background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
+}
+
+.planet-section #venus-bg {
+  background-image: url(images/venus/venus_landscape_1920x1080px.png);
+}
+.planet-section #earth-bg {
+  background-image: url(images/earth/earth_landscape_1920x1080px.png);
+}
+.planet-section #mars-bg {
+  background-image: url(images/mars/mars_landscape_1920x1080px.png);
+}
+.planet-section #jupiter-bg {
+  background-image: url(images/jupiter/jupiter_landscape_1920x1080px.png);
+}
+.planet-section #saturn-bg {
+  background-image: url(images/saturn/saturn_landscape_1920x1080px.png);
+}
+.planet-section #uranus-bg {
+  background-image: url(images/uranus/uranus_landscape_1920x1080px.png);
+}
+.planet-section #neptune-bg {
+  background-image: url(images/neptune/neptune_landscape_1920x1080px.png);
+}
+
+.planet-section .bg-section h2 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(1px);
+  background-color: #000000a8;
+  color: var(--);
+}
+
+.planet-section .planet-grid {
+  width: 90svw;
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 100px 0;
+}
+
+.planet-section .planet-grid .grid-item {
+  padding: 20px;
+}
+
+.planet-section .planet-grid .grid-item:first-child {
+  grid-column: 1 / span 2;
+  border-right: 1px solid var(--meteor-gray);
+}
+
+.planet-section .planet-grid .grid-item h3 {
+  color: var(--aurora-teal);
+}
+
+.planet-section .planet-grid .grid-item ul {
+  list-style: none;
 }
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 
   width: 100svw;
-  height: fit-content;
+  padding: 50px 0;
 
-  color: var(--main-text);
   background-color: var(--medium);
 }
 
-footer p {
-  padding: 20px;
+footer #footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+  width: 80svw;
+}
+
+footer #contact-section {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  font-size: 30px;
+  color: var(--main-text);
+}
+
+footer ul {
+  list-style: none;
+}
+
+#footer-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--aurora-teal);
+  padding-top: 30px;
 }

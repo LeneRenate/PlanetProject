@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/other/PlanetIcon.png" type="image/favicon" />
-    <script src="index.js" defer></script>
     <title>HTML & CSS Oppgave 3: Planet Prosjekt</title>
   </head>
   <body>
@@ -36,70 +35,113 @@
     <section id="intro-section">
       <img
         src="images/other/solar-system-line_1920.jpg"
-        alt="illustration of the solar system"
+        alt="illustration of the solar , displaying all the planets in the right order"
+        usemap="#navmap"
       />
 
-      <!-- <img
+      <map name="navmap">
+        <area
+          shape="circle"
+          coords="161, 181, 21"
+          href="#mercury"
+          alt="Mercury"
+        />
+        <area shape="circle" coords="239, 181, 37" href="#venus" alt="Venus" />
+        <area
+          shape="circle"
+          coords="352, 171, 51"
+          href="#moon"
+          alt="The Moon"
+        />
+        <area shape="circle" coords="442, 181, 33" href="#mars" alt="Mars" />
+        <area
+          shape="rect"
+          coords="510, 23, 732, 335"
+          href="#jupiter"
+          alt="Jupiter"
+        />
+        <area
+          shape="circle"
+          coords="868, 181, 109"
+          href="#saturn"
+          alt="Saturn"
+        />
+        <area
+          shape="circle"
+          coords="1086, 179, 70"
+          href="#uranus"
+          alt="Uranus"
+        />
+        <area
+          shape="circle"
+          coords="1252, 180, 67"
+          href="#neptune"
+          alt="Neptune"
+        />
+      </map>
+    </section>
+
+    <!-- <img
             src="./images/Mercury/nasa-71W3CWeZF7A-unsplash.jpg"
             alt="Mariner 10's first image of Mercury, from 3+ million miles"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Mercury/am-vd0k_CKlmrs-unsplash.jpg"
             alt="Mercury out in Space"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Venus/nasa-88BMUbQHGlQ-unsplash.jpg"
             alt="Venus captured by Mariner 10 back in 1974"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Venus/venus-mariner-10-pia23791-fig2.jpg"
             alt="Venus captured by Mariner 10 back in 1974"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Venus/PIA00271~large.jpg"
             alt="Simulated image of Venus based on data from Magellan Mission"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Moon/neven-krcmarek-9dTg44Qhx1Q-unsplash.jpg"
             alt="The Full Moon, captured from Croatia"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Moon/javier-miranda-wyl4NFElEGw-unsplash.jpg"
             alt="Close up of the Moon with a light halo, captured from Los Angeles, USA"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/jupiter/jupiter_square_1000x1000px.png"
             alt="Jupiter in natural colors captured by the Hubble Telescope in May 2017, in connection to Juno's 6th flyby."
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/Saturn/saturn_square_1000x1000px.png"
             alt="Saturn as seen from the Cassini–Huygens space-research mission"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/saturn/nasa-hubble-space-telescope-RhhFdnVP-EQ-unsplash.jpg"
             alt="Saturn Aurora – January 28, 2004 Credits NASA, ESA, J. Clarke (Boston University), and Z. Levay"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/uranus/uranus-square-medium-unsplash.jpg"
             alt="Uranus as seen by Voyager 2"
           /> -->
-      <!-- <img
+    <!-- <img
             src="./images/neptune/nasa-ScBkW9AKgcA-unsplash.jpg"
             alt="Neptune as seen from Voyager 2, from 4.4 million miles"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/mercury/mercury_square_1000x1000px.png"
             alt="Image of Mercury"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/venus/venus_square_1000x1000px.png"
             alt="Image of Venus"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/earth/earth_square_1000x1000px.png"
             alt="Image of Earth"
           /> -->
-      <!-- <img
+    <!-- <img
             src="images/mars/mars_square_1000x1000px.png"
             alt="Image of Mars"
           /> -->
@@ -107,7 +149,7 @@
     <main id="planets">
       <section class="planet-section">
         <section id="mercury-bg" class="bg-section">
-          <h2>Mercury</h2>
+          <h2 id="mercury">Mercury</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -134,7 +176,7 @@
       </section>
       <section class="planet-section">
         <section id="venus-bg" class="bg-section">
-          <h2>Venus</h2>
+          <h2 id="venus">Venus</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -162,7 +204,7 @@
       </section>
       <section class="planet-section">
         <section id="earth-bg" class="bg-section">
-          <h2>Earth</h2>
+          <h2 id="moon">The Moon</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -192,7 +234,7 @@
       </section>
       <section class="planet-section">
         <section id="mars-bg" class="bg-section">
-          <h2>Mars</h2>
+          <h2 id="mars">Mars</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -220,7 +262,7 @@
       </section>
       <section class="planet-section">
         <section id="jupiter-bg" class="bg-section">
-          <h2>Jupiter</h2>
+          <h2 id="jupiter">Jupiter</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -247,7 +289,7 @@
       </section>
       <section class="planet-section">
         <section id="saturn-bg" class="bg-section">
-          <h2>Saturn</h2>
+          <h2 id="saturn">Saturn</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -275,7 +317,7 @@
       </section>
       <section class="planet-section">
         <section id="uranus-bg" class="bg-section">
-          <h2>Uranus</h2>
+          <h2 id="uranus">Uranus</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
@@ -301,7 +343,7 @@
       </section>
       <section class="planet-section">
         <section id="neptune-bg" class="bg-section">
-          <h2>Neptune</h2>
+          <h2 id="neptune">Neptune</h2>
         </section>
         <section class="planet-grid">
           <section class="grid-item">
