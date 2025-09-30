@@ -88,6 +88,10 @@ nav img {
   padding: 3px;
 }
 
+nav img:hover {
+  content: url(images/other/PlanetIcon_navy.png);
+}
+
 nav #nav-linklist {
   list-style: none;
 
@@ -109,11 +113,7 @@ nav .text-link:hover,
   color: var(--deep-space-navy);
 }
 
-nav img:hover {
-  content: url(images/other/PlanetIcon_navy.png);
-}
-
-header #title-section {
+header {
   width: 100svw;
   height: 100svh;
   max-height: 1000px;
@@ -153,62 +153,6 @@ header h1 {
   border-radius: 5px;
 }
 
-#intro-section p {
-  width: 60svw;
-  color: var(--meteor-gray);
-  font-size: 24px;
-  font-weight: 300;
-}
-
-#comp-container {
-  padding: 100px 0;
-  background-color: var(--cosmic-grey);
-}
-
-.comp-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  gap: 60px;
-  padding: 30px 0;
-}
-
-.comp-section h3 {
-  font-size: 36px;
-  color: var(--aurora-teal);
-}
-
-.comp-section p {
-  font-size: 24px;
-  color: var(--meteor-gray);
-}
-
-.comp-section #text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column nowrap;
-
-  height: 500px;
-  width: 500px;
-  background-color: var(--cosmic-black);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.comp-section #collage-section {
-  display: grid;
-  grid-template-columns: auto auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.comp-section #collage-section img {
-  border-radius: 0;
-  width: 250px;
-}
-
 .planet-section {
   width: 100svw;
   display: flex;
@@ -233,10 +177,19 @@ header h1 {
   height: 500px;
 }
 
+.planet-section .bg-section h2 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(1px);
+  background-color: #000000a8;
+  color: #bcbcbc;
+}
+
 .planet-section #mercury-bg {
   background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
 }
-
 .planet-section #venus-bg {
   background-image: url(images/venus/venus_landscape_1920x1080px.png);
 }
@@ -257,16 +210,6 @@ header h1 {
 }
 .planet-section #neptune-bg {
   background-image: url(images/neptune/neptune_landscape_1920x1080px.png);
-}
-
-.planet-section .bg-section h2 {
-  font-size: 40px;
-  letter-spacing: 10px;
-  padding: 5px 20px;
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
-  background-color: #000000a8;
-  color: #bcbcbc;
 }
 
 .planet-section .planet-grid {
@@ -322,12 +265,12 @@ footer #contact-section {
   margin-bottom: 10px;
 }
 
-footer h3 {
+#contact-section h3 {
   font-size: 30px;
   color: var(--aurora-teal);
 }
 
-footer ul {
+#contact-section ul {
   list-style: none;
 }
 
