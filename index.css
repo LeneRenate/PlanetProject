@@ -84,7 +84,7 @@ nav img {
   padding: 3px;
 }
 
-nav ul {
+nav #nav-linklist {
   list-style: none;
 
   display: flex;
@@ -123,6 +123,7 @@ header #title-section {
 }
 
 header h1 {
+  letter-spacing: 5px;
   padding: 50px;
   font-size: 50px;
   color: var(--meteor-gray);
