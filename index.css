@@ -17,8 +17,14 @@ Midnight Bloom:
   --primary-warm: #2e294eff;
   --primary-cold: #d499b9ff;
 
---oxford-blue: #011638ff;
---space-cadet: #2e294eff;
+  --bg-main: #0b0c10;
+  --bg-alt: #0f1118;
+  --bg-nav: #0d1b2a;
+  --text: #7b8794;
+  --accent: #1e847f;
+
+--bg-main: #011638;
+--nav-bg: #2e294eff;
 --purpureus: #9055a2ff;
 --lilac: #d499b9ff;
 --tea-rose-red: #e8c1c5ff;
@@ -27,8 +33,6 @@ Midnight Bloom:
 :root {
   --cosmic-black: #0b0c10;
   --cosmic-grey: #0f1118;
-  --nebula-purple: #5b2c6f;
-  --starlight-blue: #1b3b6f;
   --deep-space-navy: #0d1b2a;
   --meteor-gray: #7b8794;
   --aurora-teal: #1e847f;
@@ -236,8 +240,8 @@ header h1 {
 .planet-section #venus-bg {
   background-image: url(images/venus/venus_landscape_1920x1080px.png);
 }
-.planet-section #earth-bg {
-  background-image: url(images/earth/earth_landscape_1920x1080px.png);
+.planet-section #moon-bg {
+  background-image: url(images/earth/moon_landscape_1920x1080px.png);
 }
 .planet-section #mars-bg {
   background-image: url(images/mars/mars_landscape_1920x1080px.png);
