@@ -6,10 +6,6 @@
   --main-text: #e8c1c5;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
 html {
   scroll-behavior: smooth;
 }
