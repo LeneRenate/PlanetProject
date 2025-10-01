@@ -153,17 +153,17 @@ header h1 {
 }
 
 .planet-section #mercury-bg {
-  background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
+  background-image: url(./images/Mercury/mercury_landscape_1920x1080px.png);
 }
 .planet-section #venus-bg {
-  background-image: url(images/venus/venus_landscape_1920x1080px.png);
+  background-image: url(./images/Venus/venus_landscape_1920x1080px.png);
 }
 
 .planet-section #moon-bg {
   background-image: url(images/moon/moon_landscape_1920x1080px.png);
 }
 .planet-section #mars-bg {
-  background-image: url(images/mars/mars_landscape_1920x1080px.png);
+  background-image: url(./images/Mars/mars_landscape_1920x1080px.png);
 }
 .planet-section #jupiter-bg {
   background-image: url(images/jupiter/jupiter_landscape_1920x1080px.png);
