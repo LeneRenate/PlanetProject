@@ -1,6 +1,6 @@
 :root {
   --background: #011638;
-  --header-bg: #2e294e;
+  --header-bg: #2d284d;
   --medium: #9055a2;
   --heading-text: #d499b9;
   --main-text: #e8c1c5;
@@ -54,7 +54,6 @@ nav img {
   padding: 3px;
 }
 
-
 nav img:hover {
   content: url(images/other/PlanetIcon_alt.png);
 }
@@ -80,7 +79,6 @@ nav .text-link:hover,
   color: var(--header-bg);
 }
 
-
 header {
   width: 100svw;
   height: 100svh;
@@ -95,9 +93,9 @@ header {
 }
 
 header h1 {
-  letter-spacing: 5px;
+  font-family: Borel, cursive;
   padding: 50px;
-  font-size: 50px;
+  font-size: 60px;
   color: var(--heading-text);
 }
 
@@ -113,7 +111,6 @@ header h1 {
   width: 100svw;
 
   background-color: var(--background);
-
 }
 
 #intro-section img {
@@ -145,11 +142,10 @@ header h1 {
   height: 500px;
 }
 
-
 .planet-section .bg-section h2 {
-  font-size: 40px;
-  letter-spacing: 10px;
-  padding: 5px 20px;
+  font-family: Borel;
+  font-size: 46px;
+  padding: 30px 20px 2px;
   border-radius: 5px;
   backdrop-filter: blur(1px);
   background-color: var(--header-bg);
@@ -217,7 +213,6 @@ footer {
   width: 100svw;
   padding: 50px 0;
 
-
   background-color: var(--header-bg);
 }
 
@@ -231,7 +226,6 @@ footer #footer-container {
   width: 80svw;
 }
 
-
 footer img {
   width: 40px;
 }
@@ -240,12 +234,10 @@ footer #contact-section {
   margin-bottom: 10px;
 }
 
-
 #contact-section h3 {
   font-size: 30px;
   color: var(--main-text);
 }
-
 
 #contact-section ul {
   list-style: none;
@@ -255,7 +247,6 @@ footer #contact-section {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
 
   border-top: 1px solid var(--main-text);
   padding-top: 30px;
