@@ -54,7 +54,12 @@ nav img {
   padding: 3px;
 }
 
-nav ul {
+
+nav img:hover {
+  content: url(images/other/PlanetIcon_alt.png);
+}
+
+nav #nav-linklist {
   list-style: none;
 
   display: flex;
@@ -75,11 +80,8 @@ nav .text-link:hover,
   color: var(--header-bg);
 }
 
-nav img:hover {
-  content: url(images/other/PlanetIcon_navy.png);
-}
 
-header #title-section {
+header {
   width: 100svw;
   height: 100svh;
   max-height: 1000px;
@@ -93,6 +95,7 @@ header #title-section {
 }
 
 header h1 {
+  letter-spacing: 5px;
   padding: 50px;
   font-size: 50px;
   color: var(--heading-text);
@@ -109,68 +112,13 @@ header h1 {
 
   width: 100svw;
 
-  background-color: var(--header-bg);
+  background-color: var(--background);
+
 }
 
 #intro-section img {
   width: 1390px;
   border-radius: 5px;
-}
-
-#intro-section p {
-  width: 60svw;
-  color: var(--main-text);
-  font-size: 24px;
-  font-weight: 300;
-}
-
-#comp-container {
-  padding: 100px 0;
-  background-color: var(--cosmic-grey);
-}
-
-.comp-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  gap: 60px;
-  padding: 30px 0;
-}
-
-.comp-section h3 {
-  font-size: 36px;
-  color: var(--heading-text);
-}
-
-.comp-section p {
-  font-size: 24px;
-  color: var(--meteor-gray);
-}
-
-.comp-section #text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: column nowrap;
-
-  height: 500px;
-  width: 500px;
-  background-color: var(--cosmic-black);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.comp-section #collage-section {
-  display: grid;
-  grid-template-columns: auto auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.comp-section #collage-section img {
-  border-radius: 0;
-  width: 250px;
 }
 
 .planet-section {
@@ -197,14 +145,26 @@ header h1 {
   height: 500px;
 }
 
+
+.planet-section .bg-section h2 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(1px);
+  background-color: var(--header-bg);
+  color: var(--heading-text);
+}
+
 .planet-section #mercury-bg {
   background-image: url(images/mercury/mercury_landscape_1920x1080px.png);
 }
 .planet-section #venus-bg {
   background-image: url(images/venus/venus_landscape_1920x1080px.png);
 }
-.planet-section #earth-bg {
-  background-image: url(images/earth/earth_landscape_1920x1080px.png);
+
+.planet-section #moon-bg {
+  background-image: url(images/moon/moon_landscape_1920x1080px.png);
 }
 .planet-section #mars-bg {
   background-image: url(images/mars/mars_landscape_1920x1080px.png);
@@ -222,16 +182,6 @@ header h1 {
   background-image: url(images/neptune/neptune_landscape_1920x1080px.png);
 }
 
-.planet-section .bg-section h2 {
-  font-size: 40px;
-  letter-spacing: 10px;
-  padding: 5px 20px;
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
-  background-color: var(--header-bg);
-  color: var(--heading-text);
-}
-
 .planet-section .planet-grid {
   width: 90svw;
   max-width: 1060px;
@@ -247,12 +197,11 @@ header h1 {
 
 .planet-section .planet-grid .grid-item:first-child {
   grid-column: 1 / span 2;
-  border-right: 1px solid var(--meteor-gray);
 }
 
 .planet-section .planet-grid .grid-item h3 {
   color: var(--heading-text);
-  border-bottom: 2px solid var(--heading-text);
+  border-bottom: 1px solid var(--heading-text);
 }
 
 .planet-section .planet-grid .grid-item ul {
@@ -268,7 +217,8 @@ footer {
   width: 100svw;
   padding: 50px 0;
 
-  background-color: var(--medium);
+
+  background-color: var(--header-bg);
 }
 
 footer #footer-container {
@@ -281,17 +231,23 @@ footer #footer-container {
   width: 80svw;
 }
 
+
+footer img {
+  width: 40px;
+}
 footer #contact-section {
   list-style: none;
   margin-bottom: 10px;
 }
 
-footer h3 {
+
+#contact-section h3 {
   font-size: 30px;
   color: var(--main-text);
 }
 
-footer ul {
+
+#contact-section ul {
   list-style: none;
 }
 
@@ -300,6 +256,7 @@ footer ul {
   width: 100%;
   justify-content: space-between;
 
-  border-top: 1px solid var(--aurora-teal);
+
+  border-top: 1px solid var(--main-text);
   padding-top: 30px;
 }
