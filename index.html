@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/other/PlanetIcon.png" type="image/favicon" />
-    <script src="index.js" defer></script>
     <title>HTML & CSS Oppgave 3: Planet Prosjekt</title>
   </head>
   <body>
@@ -17,9 +16,6 @@
       </a>
       <ul id="nav-linklist">
         <a class="text-link" href="#intro-section">
-          <li>THE SOLAR SYSTEM</li>
-        </a>
-        <a class="text-link" href="#planets">
           <li>PLANETS</li>
         </a>
         <a class="text-link" href="#footer">
@@ -28,17 +24,58 @@
       </ul>
     </nav>
     <header>
-      <h1>The Solar System</h1>
+      <h1>THE SOLAR SYSTEM</h1>
     </header>
     <section id="intro-section">
       <img
         src="images/other/solar-system-line_1920.jpg"
-        alt="illustration of the solar system"
+        alt="illustration of the solar , displaying all the planets in the right order"
+        usemap="#navmap"
       />
-    </section>
 
+      <map name="navmap">
+        <area
+          shape="circle"
+          coords="161, 181, 21"
+          href="#mercury"
+          alt="Mercury"
+        />
+        <area shape="circle" coords="239, 181, 37" href="#venus" alt="Venus" />
+        <area
+          shape="circle"
+          coords="352, 171, 51"
+          href="#moon"
+          alt="The Moon"
+        />
+        <area shape="circle" coords="442, 181, 33" href="#mars" alt="Mars" />
+        <area
+          shape="rect"
+          coords="510, 23, 732, 335"
+          href="#jupiter"
+          alt="Jupiter"
+        />
+        <area
+          shape="circle"
+          coords="868, 181, 109"
+          href="#saturn"
+          alt="Saturn"
+        />
+        <area
+          shape="circle"
+          coords="1086, 179, 70"
+          href="#uranus"
+          alt="Uranus"
+        />
+        <area
+          shape="circle"
+          coords="1252, 180, 67"
+          href="#neptune"
+          alt="Neptune"
+        />
+      </map>
+    </section>
     <main id="planets">
-      <section class="planet-section">
+      <section id="mercury" class="planet-section">
         <section id="mercury-bg" class="bg-section">
           <h2>MERCURY</h2>
         </section>
@@ -65,7 +102,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="venus" class="planet-section">
         <section id="venus-bg" class="bg-section">
           <h2>VENUS</h2>
         </section>
@@ -93,7 +130,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="moon" class="planet-section">
         <section id="moon-bg" class="bg-section">
           <h2>THE MOON</h2>
         </section>
@@ -121,7 +158,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="mars" class="planet-section">
         <section id="mars-bg" class="bg-section">
           <h2>MARS</h2>
         </section>
@@ -149,7 +186,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="jupiter" class="planet-section">
         <section id="jupiter-bg" class="bg-section">
           <h2>JUPITER</h2>
         </section>
@@ -176,7 +213,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="saturn" class="planet-section">
         <section id="saturn-bg" class="bg-section">
           <h2>SATURN</h2>
         </section>
@@ -204,7 +241,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="uranus" class="planet-section">
         <section id="uranus-bg" class="bg-section">
           <h2>URANUS</h2>
         </section>
@@ -230,7 +267,7 @@
           </section>
         </section>
       </section>
-      <section class="planet-section">
+      <section id="neptune" class="planet-section">
         <section id="neptune-bg" class="bg-section">
           <h2>NEPTUNE</h2>
         </section>
